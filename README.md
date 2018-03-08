@@ -1,24 +1,31 @@
-# ellie-slack
-Meet Ellie, Eliza's younger, hipper, psychobabble-friendly successor. She makes a great Slackbot.
+# ernestina-slack
+Ernestina is a rubber duck who would like to help you with your code.
+She currently lives and works at correctiv.org
+Her slackbot code is based on Ellie and Eliza.
 
 ## Background
-Ellie's is Slack's Python-based [real-time messaging bot](https://github.com/slackhq/python-rtmbot) wrapped around  Daniel Connelly's [Python implementation](https://github.com/dhconnelly/paip-python) of Peter Norvig's *Paradigms of AI Programming* Eliza .. with updated diction. Loads has changed since 1991, and she seemed a little standoff-ish – which also led to her new, hip name.
+Ernestina is a modification of [Ellie](https://github.com/christinac/ellie-slack).
+Ellie's is Slack's Python-based
+[real-time messaging bot](https://github.com/slackhq/python-rtmbot)
+wrapped around
+Daniel Connelly's [Python implementation](https://github.com/dhconnelly/paip-python)
+of Peter Norvig's *Paradigms of AI Programming* Eliza .. with updated diction.
 
-The langauge updates rendered her internals less elegant, but I think – hope – they make Ellie more fun than Eliza ever was.
-
-### Modding Ellie
-If you'd like to dive into Ellie's innerworkings, [ellie.py](https://github.com/christinac/ellie-slack/blob/master/plugins/ellie/ellie.py) is your file. Push changes back here, in a branch, if you think others will appreicate your wit.
+### Modding
+If you'd like to dive into Ernestina's innerworkings,
+[ernestina.py](https://github.com/lisaq/ernestina-slack/blob/master/plugins/ernestina/ernestina.py)
+is your file.
 
 ### Dependencies
 * [websocket-client](https://pypi.python.org/pypi/websocket-client/)
 * [python-slackclient](https://github.com/slackhq/python-slackclient)
 
 ### Installation
-1. Download Ellie
+1. Download Ernestina
 
   ````
-  git clone git@github.com:christinac/ellie-slack.git
-  cd ellie-slack
+  git clone git@github.com:lisaq/ernestina-slack.git
+  cd ernestina-slack
   ````
 
 2. Install dependencies
@@ -27,7 +34,8 @@ If you'd like to dive into Ellie's innerworkings, [ellie.py](https://github.com/
   pip install -r requirements.txt
   ````
 
-3. Configure rtmbot ([Slack instructions](https://christinac.slack.com/services/new/bot).) From the Slack console, you'll get to choose your bot's name and icon. Though we've become partial to Ellile, bot-naming is up to you.
+3. Configure rtmbot ([Slack instructions](https://christinac.slack.com/services/new/bot).)
+From the Slack console, you'll get to choose your bot's name and icon.
 
   ````
   cp example-config/rtmbot.conf .
@@ -35,7 +43,8 @@ If you'd like to dive into Ellie's innerworkings, [ellie.py](https://github.com/
   SLACK_TOKEN: "xoxb-11111111111-222222222222222"
   ````
 
-4. Run her! (You've got to keep her running so long as you'd like her to keep chattering; something like [nohup](http://linux.die.net/man/1/nohup) might be helpful.)
+4. Run her! (You've got to keep her running so long as you'd like her to keep
+chattering; something like [nohup](http://linux.die.net/man/1/nohup) might be helpful.)
 
 ````
   python rtmbot.py
@@ -51,6 +60,3 @@ docker build -t napramirez/ellie-slack:1.0 .
 ````
 docker run -d --env SLACK_TOKEN="xoxb-11111111111-222222222222222" napramirez/ellie-slack:1.0
 ````
-
-## Ellie in action
-![Ellie in action](screenshot.png)
