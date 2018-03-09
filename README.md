@@ -5,7 +5,7 @@ Her slackbot code is based on Ellie and Eliza.
 
 ## Background
 Ernestina is a modification of [Ellie](https://github.com/christinac/ellie-slack).
-Ellie's is Slack's Python-based
+Ellie is a Slack Python-based
 [real-time messaging bot](https://github.com/slackhq/python-rtmbot)
 wrapped around
 Daniel Connelly's [Python implementation](https://github.com/dhconnelly/paip-python)
