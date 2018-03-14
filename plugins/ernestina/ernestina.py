@@ -10,6 +10,8 @@ rules = {
         ":simple_smile: Hi!",
         "grimacing: What's up?",
         "Hello friend!",
+        "Hi, how can I help you?",
+        ":simple_smile: Hello! Can I help you?"
     ],
     "?*x h*llo ?*y": [
         "Hello there.",
@@ -366,6 +368,7 @@ rules = {
         "Are you sure you'd like to hear the truth about ?y?",
         "What's holding you back from the truth?",
         "What would happen then?",
+        "Is that really the truth",
     ],
     "?*x different ?*y": [
         "How so?",
@@ -386,11 +389,17 @@ rules = {
     "?*x drink ?*y": [
         "Bottoms up!",
         "Cheers!",
+        "Let's get some beers.",
     ],
     "?*x I dont know ?*y": [
         "Why don't you know?",
         "Did you try googling it?",
         "Is there someone you can ask?",
+    ],
+    "Should I do ?*x or ?*y": [
+        "?*x",
+        "?*y",
+        "What do you think you should do?",
     ],
     "?*x I dont know why ?*y didnt ?*z": [
         ":facepalm:",
@@ -398,6 +407,9 @@ rules = {
     ],
     "@ernestina please leave this channel ?*y": [
         "/leave",
+    ],
+    "@ernestina post a gif of ?*y": [
+        "/giphy ?*y",
     ],
     "?*x hard work ?*y": [
         "https://media.giphy.com/media/E6jscXfv3AkWQ/giphy.gif",
@@ -425,7 +437,8 @@ rules = {
         "I'm glad I could help you.",
         ":success:",
         ":thumbs_up:",
-        "grimacing:",
+        ":grimacing:",
+        ":simple_smile:",
     ],
 }
 
@@ -447,6 +460,12 @@ default_responses = [
     "Aaaaah.",
     "Sure.",
     ":orly:",
+    "And then what happens?",
+    "What's next?",
+    "Ok",
+    "Continue",
+    ":simple_smile:",
+
 ]
 
 
