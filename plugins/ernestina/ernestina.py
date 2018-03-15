@@ -55,6 +55,7 @@ rules = {
     "?*x yo ?*y": [
         "yo.",
         "https://media.giphy.com/media/aQrYT4WVN55aU/giphy.gif",
+        "https://media.giphy.com/media/krewXUB6LBja/giphy.gif",
     ],
     "?*x how are ?*y": [
         "How so?",
@@ -402,6 +403,11 @@ rules = {
         "Bottoms up!",
         "Cheers!",
     ],
+    "@ernestina yes or no": [
+        "https://media.giphy.com/media/5T8tEJtCgvDuo/giphy.gif",
+        "https://media.giphy.com/media/mFjHIKxnZpwBy/giphy.gif",
+        "what do you want me to say?",
+    ],
     "?*x drink ?*y": [
         "Bottoms up!",
         "Cheers!",
@@ -419,8 +425,8 @@ rules = {
         "What do you think you should do?",
     ],
     "Should I ?*x or ?*y": [
-        "You should ?*x",
-        "You should ?*y",
+        "You should ?x",
+        "You should ?y",
         "What do you think you should do?",
     ],
     "?*x I dont know why ?*y didnt ?*z": [
