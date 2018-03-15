@@ -14,8 +14,9 @@ bot_id = os.getenv('BOT_SLACK_ID')
 
 
 def process_message(data):
-    if bot_id in data['text'] or data['channel'].startswith('D'):
+    # if bot_id in data['text'] or data['channel'].startswith('D'):
         # Sleep for a bit before replying; you'll seem more real this way
-        time.sleep(random.randint(0, 9) * .2)
+    time.sleep(random.randint(0, 9) * .2)
+    if bot_id in data['text'] or data['channel'].startswith('D'):
         outputs.append(
             [data['channel'], "{}".format(ernestina.respond(data['text']))])
