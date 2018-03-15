@@ -1,4 +1,7 @@
+rtmbot.conf
+env/
 *~
+*.log
 .DS_Store
 *.pyc
 *.sublime*
