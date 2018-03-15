@@ -165,7 +165,7 @@ if __name__ == "__main__":
 
     config = yaml.load(file('rtmbot.conf', 'r'))
     debug = config["DEBUG"]
-    slack_token = os.getenv('SLACK_TOKEN', config['SLACK_TOKEN'])
+    slack_token = os.getenv('SLACK_TOKEN')
     bot = RtmBot(slack_token)
     site_plugins = []
     files_currently_downloading = []

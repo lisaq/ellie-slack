@@ -10,7 +10,7 @@ import yaml
 crontable = []
 outputs = []
 config = yaml.load(file('rtmbot.conf', 'r'))
-bot_id = os.getenv('BOT_SLACK_ID', config['BOT_SLACK_ID'])
+bot_id = os.getenv('BOT_SLACK_ID')
 
 
 def process_message(data):
