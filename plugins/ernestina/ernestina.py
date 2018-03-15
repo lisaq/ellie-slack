@@ -25,6 +25,10 @@ rules = {
     "?*x guten morgen ?*y": [
         "Guten Morgen!",
     ],
+    "?*x good morning ?*y": [
+        "Guten Morgen!",
+        "Good Morning!",
+    ],
     "?*x go over some code ?*y": [
         "Yes tell me all about your code.",
         "Can you explain it to me, line by line?",
@@ -69,6 +73,8 @@ rules = {
     "?*x boring ?*y": [
         "Do I look bored?",
         "https://media.giphy.com/media/V6xZTEQ7iw7ni/giphy.gif",
+        "https://media.giphy.com/media/vJRMuf14ygIec/giphy.gif",
+        "https://media.giphy.com/media/hRzDLerjeYGNq/giphy.gif",
     ],
     "?*x Ernestina ?*y": [
         "I'm here for you.",
@@ -172,6 +178,13 @@ rules = {
     ],
     "?*x I am happy ?*y": [
         "I'm happy that you are happy"
+        "https://media.giphy.com/media/WUuypTBVGuwhi/giphy.gif",
+    ],
+    "?*x amazing ?*y": [
+        "https://media.giphy.com/media/KI9oNS4JBemyI/giphy.gif",
+    ],
+    "?*x thinking ?*y": [
+        "https://media.giphy.com/media/3o7buirYcmV5nSwIRW/giphy.gif",
     ],
     "?*x I am sad ?*y": [
         "I am sorry to hear that you are depressed",
@@ -236,7 +249,7 @@ rules = {
         "What if others thought you were ?y?",
         "Why are you ?y?",
     ],
-    "?*x I'm ?*y": [
+    "?*x Im ?*y": [
         "In what way are you ?y?",
         "Do you want to be ?y?",
         "Would you like others to talk about how you ?y?",
@@ -324,7 +337,6 @@ rules = {
         "Surely not everyone",
         "Can you think of anyone in particular?",
         "Who, for example?",
-        "You are thinking of a special person .. ",
         "Is this what you should do?",
         "Have you thought about ?y too?",
         "By 'everyone' do you mean your team?",
@@ -382,6 +394,10 @@ rules = {
         "Relax, it will be ok.",
         "https://media.giphy.com/media/TQNOzhCEfrVgA/giphy.gif"
     ],
+    "?*x frustrated ?*y": [
+        "Bottoms up!",
+        "Cheers!",
+    ],
     "?*x whisky ?*y": [
         "Bottoms up!",
         "Cheers!",
@@ -393,12 +409,18 @@ rules = {
     ],
     "?*x I dont know ?*y": [
         "Why don't you know?",
+        "Have you read the documentation?",
         "Did you try googling it?",
         "Is there someone you can ask?",
     ],
     "Should I do ?*x or ?*y": [
         "?*x",
         "?*y",
+        "What do you think you should do?",
+    ],
+    "Should I ?*x or ?*y": [
+        "You should ?*x",
+        "You should ?*y",
         "What do you think you should do?",
     ],
     "?*x I dont know why ?*y didnt ?*z": [
@@ -415,13 +437,17 @@ rules = {
         "https://media.giphy.com/media/E6jscXfv3AkWQ/giphy.gif",
     ],
     "?*x surprise ?*y": [
-        "http://stream1.gifsoup.com/view3/4299078/red-panda-surprise-o.gif",
+        "https://media.giphy.com/media/1UkWl8EGtf27K/giphy.gif",
+        "https://media.giphy.com/media/krewXUB6LBja/giphy.gif",
     ],
     "?*x keep trying ?*y": [
         "http://stream1.gifsoup.com/view3/2282065/red-panda-o.gif",
     ],
     "?*x downtime ?*y": [
         "http://stream1.gifsoup.com/view2/2209206/red-pandas-playing-o.gif",
+    ],
+    "?*x egg ?*y": [
+        "Egg? I mean...I am a duck.",
     ],
     "?*x cheers ?*y": [
         "Cheers!",
@@ -465,7 +491,7 @@ default_responses = [
     "Ok",
     "Continue",
     ":simple_smile:",
-
+    "https://media.giphy.com/media/nn7ECuDRWMnGU/giphy.gif",
 ]
 
 
