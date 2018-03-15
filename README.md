@@ -43,12 +43,16 @@ From the Slack console, you'll get to choose your bot's name and icon.
   SLACK_TOKEN: "xoxb-11111111111-222222222222222"
   ````
 
-4. Run her! (You've got to keep her running so long as you'd like her to keep
-chattering; something like [nohup](http://linux.die.net/man/1/nohup) might be helpful.)
+4. Run her!
 
 ````
   python rtmbot.py
 ````
+
+### Deployment
+You've got to keep her running so long as you'd like her to keep chattering.
+We deployed her to Heroku; see [Heroku's Python docs](https://devcenter.heroku.com/articles/getting-started-with-python).
+Stuff like the runtime and Procfile are already set up for Heroku.
 
 ### Docker
 1. If you want to build the Docker image on your own
