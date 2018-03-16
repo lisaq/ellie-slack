@@ -1,1 +1,1 @@
-worker: python bot.py start
+web: python rtmbot.py
