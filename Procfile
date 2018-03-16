@@ -1,1 +1,1 @@
-web: python rtmbot.py
+worker: python rtmbot.py
