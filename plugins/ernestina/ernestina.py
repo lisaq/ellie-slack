@@ -77,10 +77,6 @@ rules = {
         "https://media.giphy.com/media/vJRMuf14ygIec/giphy.gif",
         "https://media.giphy.com/media/hRzDLerjeYGNq/giphy.gif",
     ],
-    "?*x Ernestina ?*y": [
-        "I'm here for you.",
-        "Of course. That's me.",
-    ],
     "?*x Joseph Weizenbaum, ?*y": [
         "Yeah, he's kind of my great grandfather. I owe him a lot.",
     ],
@@ -403,7 +399,7 @@ rules = {
         "Bottoms up!",
         "Cheers!",
     ],
-    "@ernestina yes or no": [
+    "yes or no": [
         "https://media.giphy.com/media/5T8tEJtCgvDuo/giphy.gif",
         "https://media.giphy.com/media/mFjHIKxnZpwBy/giphy.gif",
         "what do you want me to say?",
@@ -429,14 +425,25 @@ rules = {
         "You should ?y",
         "What do you think you should do?",
     ],
+    "Should we ?*x or ?*y": [
+        "You should ?x",
+        "You should ?y",
+        "What do you think you should do?",
+    ],
+    "Should we ?*x": [
+        "Yes,if you think you should.",
+        "No, if you think you shouldn't.",
+        "What do you think you should do?",
+        "Is it the best idea?",
+    ],
     "?*x I dont know why ?*y didnt ?*z": [
         ":facepalm:",
         "Is it hard to ?z?",
     ],
-    "@ernestina please leave this channel ?*y": [
+    "please leave this channel ?*y": [
         "/leave",
     ],
-    "@ernestina post a gif of ?*y": [
+    "post a gif of ?*y": [
         "/giphy ?*y",
     ],
     "?*x hard work ?*y": [
