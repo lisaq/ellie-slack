@@ -15,6 +15,9 @@ of Peter Norvig's *Paradigms of AI Programming* Eliza .. with updated diction.
 If you'd like to dive into Ernestina's innerworkings,
 [ernestina.py](https://github.com/lisaq/ernestina-slack/blob/master/plugins/ernestina/ernestina.py)
 is your file.
+If you're new to setting up and running and building slackbots,
+[this beginner's guide](https://slackhq.com/a-beginner-s-guide-to-your-first-bot-97e5b0b7843d)
+is recommended reading.
 
 ### Dependencies
 * [websocket-client](https://pypi.python.org/pypi/websocket-client/)
@@ -34,14 +37,27 @@ is your file.
   pip install -r requirements.txt
   ````
 
-3. Configure rtmbot ([Slack instructions](https://christinac.slack.com/services/new/bot).)
+3. Configuration
 From the Slack console, you'll get to choose your bot's name and icon.
 
+There's a configuration file called config.conf which is pretty basic; if you're
+adding plugins or such which need to be loaded, this is a good place to put them.
+It's recommended that you make a second file called local.conf (which is ignored
+by github) to set envirnoment variables such as your Slack token.
+You'll want to set these:
+
   ````
-  cp example-config/rtmbot.conf .
-  vi rtmbot.conf
+  DEBUG: True
+  LOGFILE: "logfile.log"
   SLACK_TOKEN: "xoxb-11111111111-222222222222222"
+  SLACK_BOT_ID: "UXXXXXXXX"
   ````
+Explained:
+  `DEBUG`: turn this on locally to get more information on errors
+  `LOGFILE`: all the `logging` statements will output here
+  `SLACK_TOKEN`: this is the API Token in your bot's settings in the Slack admin interface
+  `SLACK_BOT_ID`: your bot's user id can be found in the url when you edit the settings in the admin interface
+  note: remove the "B" at the beginning of the id when using it in the configs
 
 4. Run her!
 

@@ -1,20 +1,25 @@
 #!/usr/bin/env python
-
-import sys
-sys.dont_write_bytecode = True
-
 import glob
-import yaml
-import json
+import logging
 import os
 import sys
 import time
-import logging
 
 from slackclient import SlackClient
 
+import yaml
+
+sys.dont_write_bytecode = True
+config = yaml.load(file('config.conf', 'r'))
+config.update(yaml.load(open('local.conf')))
+
+DEBUG = os.getenv('DEBUG') or config['DEBUG']
+SLACK_TOKEN = os.getenv('SLACK_TOKEN') or config['SLACK_TOKEN']
+BOT_SLACK_ID = os.getenv('BOT_SLACK_ID') or config['BOT_SLACK_ID']
+
+
 def dbg(debug_string):
-    if debug:
+    if DEBUG:
         logging.info(debug_string)
 
 class RtmBot(object):
@@ -92,7 +97,7 @@ class Plugin(object):
     def do(self, function_name, data):
         if function_name in dir(self.module):
             #this makes the plugin fail with stack trace in debug mode
-            if not debug:
+            if not DEBUG:
                 try:
                     eval("self.module."+function_name)(data)
                 except:
@@ -131,7 +136,7 @@ class Job(object):
         return self.__str__()
     def check(self):
         if self.lastrun + self.interval < time.time():
-            if not debug:
+            if not DEBUG:
                 try:
                     self.function()
                 except:
@@ -162,11 +167,7 @@ if __name__ == "__main__":
         directory = os.path.abspath("{}/{}".format(os.getcwd(),
                                 directory
                                 ))
-
-    config = yaml.load(file('rtmbot.conf', 'r'))
-    debug = config["DEBUG"]
-    slack_token = os.getenv('SLACK_TOKEN')
-    bot = RtmBot(slack_token)
+    bot = RtmBot(SLACK_TOKEN)
     site_plugins = []
     files_currently_downloading = []
     job_hash = {}

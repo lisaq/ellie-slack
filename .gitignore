@@ -4,3 +4,4 @@ env/
 .DS_Store
 *.pyc
 *.sublime*
+local.conf
