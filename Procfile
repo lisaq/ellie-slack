@@ -1,1 +1,1 @@
-web: gunicorn -w 4 rtmbot:main_loop
+worker: python rtmbot.py
