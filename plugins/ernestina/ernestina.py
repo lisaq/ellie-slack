@@ -399,6 +399,14 @@ rules = {
         "Bottoms up!",
         "Cheers!",
     ],
+    "?*x beer ?*y": [
+        "Cheers!",
+        "Prost!",
+    ],
+    "?*x bier ?*y": [
+        "Cheers!",
+        "Prost!",
+    ],
     "yes or no": [
         "https://media.giphy.com/media/5T8tEJtCgvDuo/giphy.gif",
         "https://media.giphy.com/media/mFjHIKxnZpwBy/giphy.gif",
