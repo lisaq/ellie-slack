@@ -4,32 +4,47 @@ import eliza
 rules = {
     "?*x hey ?*y": [
         "Hey!",
+        ":simple_smile: Hey! Can I help you?"
+        "Hey, I'm here to help. :simple_smile:",
+        "Hi! :simple_smile:",
+        "Bonjour :simple_smile:",
     ],
     "?*x hi ?*y": [
         "Hi! I'm here to help.",
         ":simple_smile: Hi!",
-        "grimacing: What's up?",
+        ":grimacing: What's up?",
         "Hello friend!",
         "Hi, how can I help you?",
-        ":simple_smile: Hello! Can I help you?"
+        ":simple_smile: Hello! Can I help you?",
+        "Hi! :simple_smile:",
     ],
     "?*x h*llo ?*y": [
         "Hello there.",
         "Hallo",
-        "Hello",
+        "Hello :wave:",
         "Hello friend!",
         "Hi! I'm here to help.",
         ":simple_smile: Hi!",
         "grimacing: What's up?",
+        "Bonjour",
     ],
     "?*x guten morgen ?*y": [
         "Guten Morgen!",
+        "Good Morning!",
+        "Bonjour",
+    ],
+    "?*x bonjour ?*y": [
+        "Guten Morgen!",
+        "Good Morning!",
+        "Bonjour",
     ],
     "?*x good morning ?*y": [
         "Guten Morgen!",
         "Good Morning!",
+        "Bonjour",
     ],
     "?*x go over some code ?*y": [
+        "Yes, I'm ready when you are.",
         "Yes tell me all about your code.",
         "Can you explain it to me, line by line?",
         "I am happy to review code with you.",
@@ -50,6 +65,8 @@ rules = {
     ],
     "?*x tell me about the nerds ?*y": [
         "The nerds are cool.",
+        "I love the nerds :nerd_heart:"
+        "The nerds are my friends.",
         "You can find out about the nerds here: https://correctiv.github.io/",
     ],
     "?*x yo ?*y": [
@@ -71,6 +88,22 @@ rules = {
         "How can a bot help you?",
         "How might a lowly little bot solve your problems?",
     ],
+    "?*x where are you ?*y": [
+        "Do you think I'm not here?",
+        "How can a duck help you?",
+        "I'm right here.",
+        "I'm here to help you.",
+        "I'm in your Slack.",
+    ],
+    "?*x lunch ?*y": [
+        "Do you think you should go to lunch?",
+        "How can a duck help you with lunch?",
+        "Where are you going for lunch?",
+        "Maybe you should eat something healthy.",
+        "Would you like a sandwich?",
+        "Do you want me to go to lunch with you?",
+        "wtfsigte.com",
+    ],
     "?*x boring ?*y": [
         "Do I look bored?",
         "https://media.giphy.com/media/V6xZTEQ7iw7ni/giphy.gif",
@@ -90,6 +123,7 @@ rules = {
         "I like them.",
         "They're kind of responsible for me.",
         "I really like my job.",
+        "They're my favorite humans.",
     ],
     "?*x duck ?*y": [
         "I am a rubber duck.",
@@ -141,6 +175,12 @@ rules = {
         "Have you made a Pinterest board about ?y yet?",
         "Would you like ?y more or less than you'd like a pet red panda?",
     ],
+    "?*x design ?*y": [
+        "How do you feel about the design?",
+        "Do you think you would like to change the design?",
+        "Do you believe the design is good?",
+        "Design is important.",
+    ],
     "?*x I dreamt ?*y": [
         "How do you feel about ?y in reality?",
         "How often do you dream about ?y?",
@@ -156,7 +196,7 @@ rules = {
     "?*x best ?*y": [
         "Is ?x really the best?",
         "How can you say ?x is the best?",
-        "Okay .. but how does ?x compare to a bouncing red panda?",
+        "Okay ... but how does ?x compare to a bouncing red panda?",
     ],
     "?*x worst ?*y": [
         "Is ?x really the worst?",
@@ -172,15 +212,20 @@ rules = {
     ],
     "?*x I am glad ?*y": [
         "I'm glad that you are glad",
+        ":success:",
     ],
     "?*x I am happy ?*y": [
-        "I'm happy that you are happy"
+        "I'm happy that you are happy",
+        ":success:",
         "https://media.giphy.com/media/WUuypTBVGuwhi/giphy.gif",
     ],
     "?*x amazing ?*y": [
+        ":fb-wow:",
         "https://media.giphy.com/media/KI9oNS4JBemyI/giphy.gif",
     ],
     "?*x thinking ?*y": [
+        "What else are you thinking?",
+        ":thinking:",
         "https://media.giphy.com/media/3o7buirYcmV5nSwIRW/giphy.gif",
     ],
     "?*x I am sad ?*y": [
@@ -205,6 +250,10 @@ rules = {
         "What similarities are there?",
         "Tell me more.",
         "Name three things in common",
+    ],
+    "?*x deploy ?*y": [
+        "Is deployment difficult?",
+        "Why do you need to deploy?",
     ],
     "?* same ?*y": [
         "What other connections do you see?",
@@ -392,8 +441,8 @@ rules = {
         "https://media.giphy.com/media/TQNOzhCEfrVgA/giphy.gif"
     ],
     "?*x frustrated ?*y": [
-        "Bottoms up!",
-        "Cheers!",
+        "https://media.giphy.com/media/3o6MbbwX2g2GA4MUus/giphy.gif",
+        "It will be ok",
     ],
     "?*x whisky ?*y": [
         "Bottoms up!",
@@ -448,11 +497,16 @@ rules = {
         ":facepalm:",
         "Is it hard to ?z?",
     ],
+    "?*x I dont know how ?*y": [
+        "http://i0.kym-cdn.com/photos/images/newsfeed/000/019/580/yoda-rtfm.jpg",
+        "Is it hard to ?y?",
+        "Did you try reading the documentation?",
+    ],
     "please leave this channel ?*y": [
         "/leave",
     ],
     "post a gif of ?*y": [
-        "/giphy ?*y",
+        "/giphy ?y",
     ],
     "?*x hard work ?*y": [
         "https://media.giphy.com/media/E6jscXfv3AkWQ/giphy.gif",
@@ -470,6 +524,12 @@ rules = {
     "?*x egg ?*y": [
         "Egg? I mean...I am a duck.",
     ],
+    "?*x tofu ?*y": [
+        "We are out of tofu.",
+    ],
+    "?*x French ?*y": [
+        "I like French people.",
+    ],
     "?*x cheers ?*y": [
         "Cheers!",
     ],
@@ -477,6 +537,9 @@ rules = {
         "You're welcome!",
         "Happy to help!",
         "I'm glad I could help you.",
+    ],
+    "?*x danke ?*y": [
+        "bitte",
     ],
     "?*x thank you ?*y": [
         "You're welcome!",
@@ -500,6 +563,7 @@ default_responses = [
     "How does that happen?",
     "Tell me more.",
     "Yes ... and?",
+    ":thinking:",
     "mmmhmm.",
     "And then what?",
     "Mmkay.",
