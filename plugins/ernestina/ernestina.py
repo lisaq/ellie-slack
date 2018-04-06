@@ -43,6 +43,14 @@ rules = {
         "Good Morning!",
         "Bonjour",
     ],
+    "?*x *bye ?*y": [
+        "Bye.",
+        "Goodbye",
+        "Bye :wave:",
+        "Talk to you later!",
+        ":simple_smile: Bye!",
+        "Tchuss!",
+    ],
     "?*x go over some code ?*y": [
         "Yes, I'm ready when you are.",
         "Yes tell me all about your code.",
@@ -398,7 +406,7 @@ rules = {
         "Does that question interest you?",
         "What is it you really want to know?",
         "What do you think?",
-        "What comes to your mind when you ask that?",
+        "What comes to your mind when you say that?",
     ],
     "?*x perhaps ?*y": [
         "You do not seem quite certain",
