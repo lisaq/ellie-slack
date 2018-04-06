@@ -73,7 +73,7 @@ rules = {
     ],
     "?*x tell me about the nerds ?*y": [
         "The nerds are cool.",
-        "I love the nerds :nerd_heart:"
+        "I love the nerds :nerd_heart:",
         "The nerds are my friends.",
         "You can find out about the nerds here: https://correctiv.github.io/",
     ],
