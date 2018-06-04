@@ -62,6 +62,13 @@ rules = {
         "Can you explain it to me, line by line?",
         "I am happy to review code with you.",
     ],
+    "?*x where are you ?*y": [
+        "Do you think I'm not here?",
+        "How can a duck help you?",
+        "I'm right here.",
+        "I'm here to help you.",
+        "I'm in your Slack.",
+    ],
     "?*x is your name ?*y": [
         "My name is Ernestina.",
         "I'm Ernestina.",
@@ -95,13 +102,6 @@ rules = {
         "Do you think I'm not real?",
         "How can a bot help you?",
         "How might a lowly little bot solve your problems?",
-    ],
-    "?*x where are you ?*y": [
-        "Do you think I'm not here?",
-        "How can a duck help you?",
-        "I'm right here.",
-        "I'm here to help you.",
-        "I'm in your Slack.",
     ],
     "?*x lunch ?*y": [
         "Do you think you should go to lunch?",
@@ -421,10 +421,9 @@ rules = {
         "What would it take to change your mind?",
     ],
     "?*x are ?*y": [
-        "Did you think they might not be ?y?",
-        "Possibly they are.",
+        "Possibly.",
         "How might you change ?y?",
-        "Is it ok that they are ?y?",
+        "Is ?y ok?",
     ],
     "?*x when ?*y": [
         "Tell me more about that.",
