@@ -28,6 +28,12 @@ rules = {
         "grimacing: What's up?",
         "Bonjour",
     ],
+    "?*x how are you ?*y": [
+        "I'm ok",
+        "Alright",
+        ":shuffle_parrot:",
+        "Good, how are you?",
+    ],
     "?*x guten morgen ?*y": [
         "Guten Morgen!",
         "Good Morning!",
@@ -137,6 +143,7 @@ rules = {
         "I am a rubber duck.",
         "I'm not just any duck. I'm your friend.",
         "Really--I'm a duck?!?",
+        "Am I your favorite duck?",
     ],
     "?*x totally ?*y": [
         "Totally",
@@ -153,6 +160,11 @@ rules = {
         "Please don't apologize.",
         "Apologies are not necessary when speaking with me.",
         "It's probably not your fault anyway.",
+    ],
+    "?*x is done ?*y": [
+        ":ship_it_parrot:",
+        "Ship it.",
+        "Do you think it's really done?",
     ],
     "?*x I remember ?*y": [
         "Do you often think of ?y?",
