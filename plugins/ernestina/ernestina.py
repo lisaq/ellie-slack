@@ -531,6 +531,14 @@ rules = {
         "I like French people.",
         "j'aime les francais",
     ],
+    "?*x German ?*y": [
+        "I am a German duck.",
+        "Germans are nice",
+    ],
+    "?*x English ?*y": [
+        "I understand English.",
+        "I like English.",
+    ],
     "?*x cheers ?*y": [
         "Cheers!",
     ],
