@@ -517,7 +517,7 @@ rules = {
     ],
     "?*x French ?*y": [
         "I like French people.",
-        "j'aime les français",
+        "j'aime les francais",
     ],
     "?*x cheers ?*y": [
         "Cheers!",
