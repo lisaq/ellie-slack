@@ -189,18 +189,6 @@ rules = {
         "Do you believe the design is good?",
         "Design is important.",
     ],
-    "?*x I dreamt ?*y": [
-        "How do you feel about ?y in reality?",
-        "How often do you dream about ?y?",
-        "Do you believe dreams are windows to our innermost desire?",
-    ],
-    "?*x dream ?*y": [
-        "What does this dream suggest to you?",
-        "Do you dream often?",
-        "What persons appear in your dreams?",
-        "Don't you believe that dream has to do with your problem?",
-        "What's been your best dream?",
-    ],
     "?*x best ?*y": [
         "Is ?x really the best?",
         "How can you say ?x is the best?",
@@ -327,7 +315,6 @@ rules = {
         "Why are you interested in whether I am ?y or not?",
         "Would you prefer if I weren't ?y?",
         "Does it matter if I am ?y?",
-        "Perhaps I am ?y in your fantasies",
     ],
     "?*x you are ?*y": [
         "What makes you think I am ?y?",
@@ -375,7 +362,7 @@ rules = {
     "?*x why don't you ?*y": [
         "Should you ?y yourself?",
         "Do you believe I don't ?y?",
-        "Perhaps I will ?y in good time",
+        "Perhaps I will ?y someday",
     ],
     "?*x yes ?*y": [
         "You seem quite positive",
@@ -479,11 +466,6 @@ rules = {
         "Did you try googling it?",
         "Is there someone you can ask?",
     ],
-    "Should I do ?*x or ?*y": [
-        "?*x",
-        "?*y",
-        "What do you think you should do?",
-    ],
     "Should I ?*x or ?*y": [
         "You should ?x",
         "You should ?y",
@@ -505,7 +487,6 @@ rules = {
         "Is it hard to ?z?",
     ],
     "?*x I dont know how ?*y": [
-        "http://i0.kym-cdn.com/photos/images/newsfeed/000/019/580/yoda-rtfm.jpg",
         "Is it hard to ?y?",
         "Did you try reading the documentation?",
     ],
@@ -536,6 +517,7 @@ rules = {
     ],
     "?*x French ?*y": [
         "I like French people.",
+        "j'aime les français",
     ],
     "?*x cheers ?*y": [
         "Cheers!",
