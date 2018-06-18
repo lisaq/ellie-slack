@@ -508,6 +508,10 @@ rules = {
     "post a gif of ?*y": [
         "/giphy ?y",
     ],
+    "llama": [
+        ":llama: llamas are cool",
+        "Do you like llamas?",
+    ],
     "?*x hard work ?*y": [
         "https://media.giphy.com/media/E6jscXfv3AkWQ/giphy.gif",
     ],
